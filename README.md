@@ -1,12 +1,12 @@
 # IUI Analysis
 
-Statistical analysis for the IUI study examining the effects of different interaction modalities (avatar, text, voice, control) on future self-continuity, affect, and anthropomorphism.
+Statistical analysis for the IUI study examining the effects of different interaction modalities (avatar, text, voice, control) on future self-continuity, persuasion, trust and affect. 
 
 ## Overview
 
 This repository contains the complete data analysis pipeline for the study, including:
 - Pre/post survey data cleaning and processing
-- Statistical comparisons (paired t-tests, ANOVA, Tukey HSD)
+- Statistical comparisons (paired t-tests, ANOVA,ANCOVA,Tukey HSD)
 - Interaction quality metrics analysis (UES, Realism, Trust, Persuasion)
 - Correlation and regression analyses
 - Visualization of results
@@ -55,16 +55,20 @@ IUI_Analysis/
 ### Pre-Post Comparisons
 Paired t-tests examining changes in:
 - Affect measures (anxious, overwhelmed, relaxed, energetic, motivated)
-- Anthropomorphism (AHS scale)
+- Adult Hope scale
 - Future self-continuity (FSQ similarity, vividness, positivity)
 
 ### Between-Condition Comparisons
-One-way ANOVAs with post-hoc Tukey tests comparing:
+One-way ANOVAs with post-hoc Tukey test and baseline corrected ANCOVA comparing:
 - Change scores across conditions (avatar, text, voice, control)
 - Post-intervention interaction quality metrics
 
+### Correlation Analysis
+- Baseline (PRE) vs. Delta Scores (POST-PRE)
+- Interaction Quality Metrics vs. Outcome changes
+  
 ### Regression Models
-Multiple regression examining how baseline measures and interaction quality predict post-intervention outcomes.
+Multiple regression examining the POST score predicition based on PRE and Interaction Score
 
 ## Output Files
 
