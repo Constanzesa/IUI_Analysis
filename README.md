@@ -73,13 +73,4 @@ The notebook automatically generates:
 - **PNG files** in `Results/Graphs/` with visualizations
 - **Intermediate data** in `intermediary/` for reproducibility
 
-## Notes
 
-- All paths use relative references for portability
-- Folders are created automatically if they don't exist
-- Cross-platform compatible (Windows, macOS, Linux)
-- FDR correction applied where appropriate for multiple comparisons
-
-## License
-
-Research data analysis for academic purposes.
