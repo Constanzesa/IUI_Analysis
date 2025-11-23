@@ -1,6 +1,6 @@
 # IUI Analysis
 
-Statistical analysis for the IUI study examining the effects of different interaction modalities (avatar, text, voice, control) on future self-continuity, persuasion, trust and affect. 
+This repository contains the code, data processing pipelines, and analysis scripts for our study on AI-generated future selves—a new paradigm in human-AI interaction where individuals converse with a personalized, decades-older “digital future self.”
 
 ## Overview
 
