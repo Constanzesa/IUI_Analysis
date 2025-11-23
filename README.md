@@ -1,0 +1,85 @@
+# IUI Analysis
+
+Statistical analysis for the IUI study examining the effects of different interaction modalities (avatar, text, voice, control) on future self-continuity, affect, and anthropomorphism.
+
+## Overview
+
+This repository contains the complete data analysis pipeline for the study, including:
+- Pre/post survey data cleaning and processing
+- Statistical comparisons (paired t-tests, ANOVA, Tukey HSD)
+- Interaction quality metrics analysis (UES, Realism, Trust, Persuasion)
+- Correlation and regression analyses
+- Visualization of results
+
+## Getting Started
+
+### Prerequisites
+
+Install required Python packages:
+```bash
+pip install pandas numpy scipy matplotlib seaborn statsmodels
+```
+
+### Running the Analysis
+
+1. Clone this repository
+2. Ensure the `Raw_Data` folder contains all study data files (IUI_PRE.csv, IUI_POST.csv, prolific.csv, etc.)
+3. Open and run `Analysis.ipynb` in Jupyter Notebook or JupyterLab
+
+All paths are configured to work relative to the notebook location - no manual configuration needed!
+
+## Directory Structure
+
+```
+IUI_Analysis/
+├── Analysis.ipynb              # Main analysis notebook
+├── Raw_Data/                   # Input data files
+│   ├── IUI_PRE.csv            # Pre-intervention survey
+│   ├── IUI_POST.csv           # Post-intervention survey
+│   ├── prolific.csv           # Participant demographics
+│   └── ...
+├── intermediary/               # Generated intermediate files
+│   ├── pre_survey_filtered.csv
+│   ├── post_survey_filtered.csv
+│   └── POST_interaction_final.csv
+├── Results/                    # Analysis outputs
+│   ├── pre_post_analysis.csv
+│   ├── ANOVA.csv
+│   ├── detailed_comparisons.csv
+│   └── Graphs/                # Generated visualizations
+└── README.md                   # This file
+```
+
+## Key Analyses
+
+### Pre-Post Comparisons
+Paired t-tests examining changes in:
+- Affect measures (anxious, overwhelmed, relaxed, energetic, motivated)
+- Anthropomorphism (AHS scale)
+- Future self-continuity (FSQ similarity, vividness, positivity)
+
+### Between-Condition Comparisons
+One-way ANOVAs with post-hoc Tukey tests comparing:
+- Change scores across conditions (avatar, text, voice, control)
+- Post-intervention interaction quality metrics
+
+### Regression Models
+Multiple regression examining how baseline measures and interaction quality predict post-intervention outcomes.
+
+## Output Files
+
+The notebook automatically generates:
+- **CSV files** in `Results/` with statistical summaries and test results
+- **PNG files** in `Results/Graphs/` with visualizations
+- **Intermediate data** in `intermediary/` for reproducibility
+
+## Notes
+
+- All paths use relative references for portability
+- Folders are created automatically if they don't exist
+- Cross-platform compatible (Windows, macOS, Linux)
+- FDR correction applied where appropriate for multiple comparisons
+
+## License
+
+Research data analysis for academic purposes.
